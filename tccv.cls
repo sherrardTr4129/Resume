@@ -31,7 +31,9 @@
 
 \setcounter{secnumdepth}{-1}
 \RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
-\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor}
+\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,fontawesome}
+
+
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -112,6 +114,7 @@
     \begin{tabularx}{\boxwidth}{c|X}
     \Telefon     & {#3}\smallskip\\
     \Letter      & \href{mailto:#4}{#4}
+    \ifstrempty{#2}{}{\smallskip\\ \faGithub  & \href{http://#2}{#2}}
     \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
     \end{tabularx}}}
 
