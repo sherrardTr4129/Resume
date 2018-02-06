@@ -106,11 +106,11 @@
 % \personal[optional: web site without scheme (no http:// prefix)]
 %          {address}{phone number}{email}
 % ]|
-\newcommand\personal[5][]{%
+\newcommand\personal[4][]{%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
-    \colorbox[HTML]{F5DD9D}{%
+    \colorbox[HTML]{FFFFFF}{%
     \begin{tabularx}{\boxwidth}{c|X}
     \faMobile        & {#3}\smallskip\\
     \faEnvelope      & \href{mailto:#4}{#4}
