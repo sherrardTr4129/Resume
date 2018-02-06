@@ -106,16 +106,16 @@
 % \personal[optional: web site without scheme (no http:// prefix)]
 %          {address}{phone number}{email}
 % ]|
-\newcommand\personal[4][]{%
+\newcommand\personal[5][]{%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
     \colorbox[HTML]{F5DD9D}{%
     \begin{tabularx}{\boxwidth}{c|X}
-    \Telefon     & {#3}\smallskip\\
-    \Letter      & \href{mailto:#4}{#4}
-    \ifstrempty{#2}{}{\smallskip\\ \faGithub  & \href{http://#2}{#2}}
-    \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
+    \faMobile        & {#3}\smallskip\\
+    \faEnvelope      & \href{mailto:#4}{#4}
+    \ifstrempty{#2}{}{\smallskip\\ \faGithub   & \href{http://#2}{#2}}
+    \ifstrempty{#1}{}{\smallskip\\ \faGlobe    & \href{http://#1}{#1}}
     \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
