@@ -34,7 +34,6 @@
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,fontawesome}
 
 
-
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
 %
@@ -74,6 +73,13 @@
     \begin{center}
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
+    \faMobile & 440-799-2705 & 
+    {\fontfamily{pzc}\selectfont\medium |} &
+    \faEnvelope & \href{mailto:tws4129}{tws4129} &
+    {\fontfamily{pzc}\selectfont\medium |} &
+    \faGlobe & \href{http://trevorsherrard.com}{www.trevorsherrard.com} &
+    {\fontfamily{pzc}\selectfont\medium |} &
+    \faGithub & \href{https://github.com/sherrardTr4129}{sherrardTr4129}
 	\bigskip
     \end{center}]}
 
@@ -99,24 +105,6 @@
     \edef\PIVOT{\detokenize{#1}}%
     \ifdefstrequal{\JOBNAME}{\PIVOT}{#2}{#3}%
 }
-
-% Renders a personal data box:
-%
-% |[
-% \personal[optional: web site without scheme (no http:// prefix)]
-%          {address}{phone number}{email}
-% ]|
-\newcommand\personal[4][]{%
-    \needspace{0.5\textheight}%
-    \newdimen\boxwidth%
-    \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
-    \colorbox[HTML]{FFFFFF}{%
-    \begin{tabularx}{\boxwidth}{c|X}
-    \faMobile        & {#3}\smallskip\\
-    \faEnvelope      & \href{mailto:#4}{#4}
-    \ifstrempty{#2}{}{\smallskip\\ \faGithub   & \href{http://#2}{#2}}
-    \ifstrempty{#1}{}{\smallskip\\ \faGlobe    & \href{http://#1}{#1}}
-    \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
 % of description:
