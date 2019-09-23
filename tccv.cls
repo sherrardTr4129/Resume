@@ -75,7 +75,7 @@
 	{\usekomafont{part} #1} \medskip\\
     \faMobile & 440-799-2705 & 
     {\fontfamily{pzc}\selectfont\medium |} &
-    \faEnvelope & \href{mailto:tws4129}{tws4129} &
+    \faEnvelope & \href{mailto:tws4129@rit.edu}{tws4129@rit.edu} &
     {\fontfamily{pzc}\selectfont\medium |} &
     \faGlobe & \href{http://trevorsherrard.com}{www.trevorsherrard.com} &
     {\fontfamily{pzc}\selectfont\medium |} &
